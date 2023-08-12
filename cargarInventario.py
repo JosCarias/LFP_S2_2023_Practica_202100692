@@ -1,11 +1,16 @@
 import json
 def getCargarInicial():
+    from menuPrincipal import getMenuPrincipal
     print("---------------------------------------------------")
     print("Inventario Principal")
     print("---------------------------------------------------")
     print("Ingrese la direccion relativa del archivo")
     ruta=input()
     imprimirInventario(leerArchivosInv(ruta))
+    print("---------------------------------------------------")
+    print("Presiciones cualquier tecla para continuar")
+    input()
+    getMenuPrincipal()
 
 def leerArchivosInv(ruta):
     inventario={}

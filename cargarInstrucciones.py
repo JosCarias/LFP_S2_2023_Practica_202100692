@@ -1,5 +1,6 @@
-from cargarInventario import leerArchivosInv
 def getCargarInstrucciones():
+    from cargarInventario import leerArchivosInv
+    from menuPrincipal import getMenuPrincipal
     print("---------------------------------------------------")
     print("Instrucciones de movimientos")
     print("---------------------------------------------------")
@@ -21,6 +22,10 @@ def getCargarInstrucciones():
     except ValueError:
         print("Error: El formato del archivo es incorrecto.")
         getCargarInstrucciones()
+    print("---------------------------------------------------")
+    print("Presiciones cualquier tecla para continuar")
+    input()
+    getMenuPrincipal()
 
 def agregar(inventario, nombre, cantidad, ubicacion):
     if nombre in inventario and ubicacion in inventario[nombre]:

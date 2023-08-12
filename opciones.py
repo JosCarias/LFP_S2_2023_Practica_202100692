@@ -1,9 +1,7 @@
-from cargarInventario import getCargarInicial
-from cargarInstrucciones import getCargarInstrucciones
-from crearInventario import setInventario
-
-
 def getOpciones():
+   from cargarInventario import getCargarInicial
+   from cargarInstrucciones import getCargarInstrucciones
+   from crearInventario import setInventario
    print("Ingrese una opcion:")
    opcion=int(input())
    if((opcion<1)or(opcion>4)):
