@@ -1,20 +1,23 @@
+#libreria para dar formato a los diccionarios
 import json
+#clase que se ejecuta en la opcion 1 del menu
 def getCargarInicial():
     from menuPrincipal import getMenuPrincipal
-
+    #bienvendida del formulario
     print("---------------------------------------------------")
     print("Inventario Principal")
     print("---------------------------------------------------")
-
+    #captura de ruta de archivo .inv
     print("Ingrese la direccion relativa del archivo")
     ruta=input()
     imprimirInventario(leerArchivosInv(ruta))
-    
+    #salida del programa
     print("---------------------------------------------------")
     print("Presiciones cualquier tecla para continuar")
     input()
     getMenuPrincipal()
 
+#clase para leer el archivo .inv y almacenarlo en un diccionario
 def leerArchivosInv(ruta):
     ubicaciones ={}
     try:
@@ -40,7 +43,8 @@ def leerArchivosInv(ruta):
     except IOError:
         print("Error al leer el archivo.")
         getCargarInicial()
-          
+
+#clase para escribir el inventario en un formato un poco mas leible         
 def imprimirInventario(inventario):
     print("---------------------------------------------------")
     print(json.dumps(inventario, indent=4))

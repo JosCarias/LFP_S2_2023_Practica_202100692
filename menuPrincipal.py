@@ -1,3 +1,4 @@
+#generardor del formulario principal
 def getMenuPrincipal():
     from opciones import getOpciones
     print("---------------------------------------------------")

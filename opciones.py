@@ -1,3 +1,4 @@
+#clase encargada se daber a que formulario quiere ingresar el usuario
 def getOpciones():
    from cargarInventario import getCargarInicial
    from cargarInstrucciones import getCargarInstrucciones
