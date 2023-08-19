@@ -5,7 +5,6 @@ def setInventario():
     #importacion de clases llamadas mas adelanta 
     from menuPrincipal import getMenuPrincipal
     from cargarInventario import leerArchivosInv
-    from cargarInstrucciones import actualizarInventario
     #bienvenida del formulario
     print("---------------------------------------------------")
     print("Informe de Inventario")

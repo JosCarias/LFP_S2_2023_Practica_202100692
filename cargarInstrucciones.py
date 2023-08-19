@@ -1,7 +1,6 @@
 #Clase para cargar cambios en el inventario
 #se ejecuta al escoger la opcione 2 del menu
 def getCargarInstrucciones():
-
     #importacion de clases a las cuales se les hace mencion mas adelanta
     from cargarInventario import imprimirInventario, leerArchivosInv
     from menuPrincipal import getMenuPrincipal

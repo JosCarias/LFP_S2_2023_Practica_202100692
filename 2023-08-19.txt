@@ -1,0 +1,5 @@
+Producto Cantidad Precio Unitario Valor Total Ubicacion
+-------------------------------------------------
+BodegaA     650.0     $2.50     $1625.00      Manzanas
+BodegaB     10.0     $3.00     $30.00      Peras
+BodegaC     75.0     $1.75     $131.25      Platanos
